@@ -14,7 +14,7 @@ export default function App() {
     <I18nProvider>
       <ToastProvider>
       <StoreProvider>
-        <BrowserRouter>
+        <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '') || undefined}>
           <Routes>
             <Route element={<AppShell />}>
               <Route index element={<Overview />} />

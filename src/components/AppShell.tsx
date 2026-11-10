@@ -38,7 +38,7 @@ export function AppShell() {
       </a>
       <aside className="sidebar">
         <div className="sidebar__brand">
-          <img src="/logo.png" alt="Plum" className="logo" />
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Plum" className="logo" />
         </div>
         <nav className="nav" aria-label={t('nav.main')}>
           {NAV.map(({ to, key, icon: Icon, end }) => (
